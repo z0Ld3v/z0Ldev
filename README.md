@@ -5,8 +5,7 @@ I'm a passionate Web3 Developer with a strong focus on Ethereum and smart contra
 ## Skills 💼
 - **Languages**: Solidity
 - **Frameworks/Tools**: Foundry, Remix
-- **Technologies**: Ethereum, IPFS, The Graph, Layer 2 Solutions
-- **Testing & Security Tools**: Slither, Echidna, Manticore, MythX
+- **Testing & Security Tools**: Slither, Echidna
 
 ## Current Learning Path 🌱
 I am intensively learning about:
