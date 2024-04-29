@@ -1,4 +1,4 @@
-# Hello, I'm [Your Name] 👋
+# Hello, I'm Zo 👋
 
 ## About Me 🚀
 I'm a passionate Web3 Developer with a strong focus on Ethereum and smart contract development. I'm currently diving deeper into the world of smart contract security research to contribute towards building safer and more reliable decentralized applications.
