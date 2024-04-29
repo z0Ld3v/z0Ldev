@@ -1,12 +1,10 @@
-# Hello, I'm [Your Name] 👋
-
+# Hello, I'm Zo 👋🏾
 ## About Me
 I'm a passionate Web3 developer specializing in smart contract security research. With a keen interest in blockchain technology, I strive to build secure and innovative solutions that enhance the decentralized landscape.
 
 ## 🛠 Technologies & Tools
 - Solidity
 - Foundry
-- JavaScript
 - Ethereum
 
 ## 💼 Key Projects
@@ -42,9 +40,8 @@ I'm a passionate Web3 developer specializing in smart contract security research
 
 ## 📫 How to Reach Me
 Feel free to reach out for collaboration or any exciting opportunities:
-- **Email**: [z0Ldev@proton.me](mailto:z0Ldev@proton.me)
-- **LinkedIn**: [LinkedIn Profile](#)
-- **Twitter**: [@yourhandle](#)
+- **Email**: [Email](mailto:z0Ldev@proton.me)
+- **X**: [@z0Ldev](https://twitter.com/z0Ldev)
 
 ---
 
