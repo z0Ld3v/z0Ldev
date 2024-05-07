@@ -5,7 +5,7 @@ I'm a passionate Web3 Developer, diving deeper into the world of smart contract 
 ## Skills 💼
 - **Languages**: Solidity
 - **Frameworks/Tools**: Foundry, Remix
-- **Testing & Security Tools**: Slither, Echidna
+- **Testing & Security Tools**: Slither, Echidna, Aderyn
 
 ## Current Learning Path 🌱
 I am intensively learning about:
