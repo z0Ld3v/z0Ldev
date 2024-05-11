@@ -1,14 +1,13 @@
 # Hello, I'm Zo 👋🏾
 ## About Me 🚀
-I'm a passionate Web3 Developer, diving deeper into the world of smart contract security research to contribute toward building safer and more reliable decentralized applications. My journey in auditing smart contracts is still at the beginner level, but I'm determined to grow this into a comprehensive, professional portfolio.
+I am a passionate Web3 Developer specializing in smart contract security research, dedicated to enhancing the security and reliability of decentralized applications. With a solid foundation in smart contract auditing, I am actively expanding my expertise to include comprehensive, high-level security analysis and mitigation strategies.
 
 ## Skills 💼
 - **Languages**: Solidity
 - **Frameworks/Tools**: Foundry, Remix
 - **Testing & Security Tools**: Slither, Echidna, Aderyn
 
-## Current Learning Path 🌱
-I am intensively learning about:
+## Professional Development 🌱
 - Security patterns in smart contract design
 - Common vulnerabilities and exploits in smart contracts
 - Advanced testing techniques for decentralized applications
@@ -23,7 +22,8 @@ Here’s a brief overview of some projects I've developed:
 - **Simple DAO**: A basic decentralized autonomous organization allowing token holders to vote on community proposals.
 
 ## Smart Contract Audits 🔍
-This portfolio will feature my audits of smart contracts, starting at a beginner level but evolving into a professional showcase.
+Additional audits are being conducted as I further advance the field of smart contract security through rigorous analysis and strategic enhancements.
+
 
 1. **[Audit #1: PasswordStore]**
    - **Summary:** This audit highlighted significant vulnerabilities in the PasswordStore contract, including:
@@ -35,7 +35,8 @@ This portfolio will feature my audits of smart contracts, starting at a beginner
      - **Severity:** High (for H-1 and H-2)
      - **Mitigations:** Implement encryption, add access controls, and correct documentation.
 
-More audits will be added as I continue my journey toward mastering smart contract security.
+More audits will be added as I further establish my expertise in smart contract security and contribute leading-edge practices to the industry.
+
 
 ## Let's Connect! 🌐
 Feel free to reach out to me through the following platforms:
