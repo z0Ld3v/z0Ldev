@@ -40,7 +40,7 @@ More audits will be added as I further establish my expertise in smart contract 
 
 ## Let's Connect! 🌐
 Feel free to reach out to me through the following platforms:
-- **X**: [@z0Ldev](https://twitter.com/yourtwitter)
+- **X**: [@z0Ldev](https://x.com/z0Ldev)
 - **Email**: [z0Ldev@proton.me](mailto:z0Ldev@proton.me)
 
 ---
