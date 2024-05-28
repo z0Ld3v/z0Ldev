@@ -64,7 +64,7 @@ Additional audits are being conducted as I further advance the field of smart co
          - **[I-6]** State changes are missing events.
          - **[I-7]** `PuppyRaffle::_isActivePlayer` is never used and should be removed.
      
-     ### Impact & Mitigations:**
+     - **Impact & Mitigations:**
 Mitigations: Follow CEI (Checks, Effects, Interactions) pattern, use a cryptographically secure random number generator, update Solidity version and use SafeMath.
 
 More audits will be added as I further establish my expertise in smart contract security and contribute leading-edge practices to the industry.
