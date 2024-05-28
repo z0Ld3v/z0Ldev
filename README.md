@@ -25,7 +25,7 @@ Here’s a brief overview of some projects I've developed:
 Additional audits are being conducted as I further advance the field of smart contract security through rigorous analysis and strategic enhancements.
 
 
-1. ## Audit #1: PasswordStore
+   ## Audit #1: PasswordStore
    - **Summary:** This audit highlighted significant vulnerabilities in the PasswordStore contract, including:
      - **[H-1]** Storing the password on-chain without encryption makes it visible to anyone.
      - **[H-2]** Lack of access control on the `setPassword` function allows any user to change the stored password.
@@ -35,7 +35,7 @@ Additional audits are being conducted as I further advance the field of smart co
      - **Severity:** High (for H-1 and H-2)
      - **Mitigations:** Implement encryption, add access controls, and correct documentation.
 
-2. ## Audit #2: PuppyRaffle Audit Report
+   ## Audit #2: PuppyRaffle Audit Report
    - **Summary:** This audit identified multiple vulnerabilities in the PuppyRaffle contract, including:
      
       - **High Severity**
