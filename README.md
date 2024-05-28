@@ -22,53 +22,8 @@ Here’s a brief overview of some projects I've developed:
 - **Simple DAO**: A basic decentralized autonomous organization allowing token holders to vote on community proposals.
 
 ## Smart Contract Audits 🔍
-Additional audits are being conducted as I further advance the field of smart contract security through rigorous analysis and strategic enhancements.
 
-
-   ## Audit #1: PasswordStore
-   - **Summary:** This audit highlighted significant vulnerabilities in the PasswordStore contract, including:
-     - **[H-1]** Storing the password on-chain without encryption makes it visible to anyone.
-     - **[H-2]** Lack of access control on the `setPassword` function allows any user to change the stored password.
-     - **[I-1]** Incorrect natspec comment in the `getPassword` function signature.
-
-   - **Impact & Mitigations:** 
-     - **Severity:** High (for H-1 and H-2)
-     - **Mitigations:** Implement encryption, add access controls, and correct documentation.
-
-   ## Audit #2: PuppyRaffle Audit Report
-   - **Summary:** This audit identified multiple vulnerabilities in the PuppyRaffle contract, including:
-     
-      - **High Severity**
-         - **[H-1]** Reentrancy attack in `PuppyRaffle::refund` allows entrant to drain raffle balance.
-         - **[H-2]** Weak randomness in `PuppyRaffle::selectWinner` allows users to influence or predict winners.
-         - **[H-3]** Integer overflow of `PuppyRaffle::totalFees` loses fees.
-     
-     - **Medium Severity**
-         - **[M-1]** Potential denial of service (DoS) attack due to looping through players array to check for duplicates in PuppyRaffle::enterRaffle.
-         - **[M-2]** Unsafe cast of `PuppyRaffle::fee` loses fees.
-         - **[M-3]** Smart contract wallets raffle winners without a receive or a fallback function will block the start of a new contest.
-
-     - **Low Severity**
-         - **[L-1]** `PuppyRaffle:getActivePlayerIndex` returns 0 for non-existent players and for players at index 0, causing a player at index 0 to incorrectly think they have not entered the raffle.
-
-     - **Gas Optimizations**
-         - **[G-1]** Unchanged state variables should be declared constant or immutable.
-         - **[G-2]** Storage variables in a loop should be cached.
-
-     - **Informational / Non-Critical**
-         - **[I-1]** Solidity pragma should be specific, not wide.
-         - **[I-2]** Using an outdated version of Solidity is not recommended.
-         - **[I-3]** Missing checks for `address(0)` when assigning values to address state variables.
-         - **[I-4]** `PuppyRaffle::selectWinner` does not follow CEI, which is not a good practice.
-         - **[I-5]** Use of "magic" numbers is not recommended.
-         - **[I-6]** State changes are missing events.
-         - **[I-7]** `PuppyRaffle::_isActivePlayer` is never used and should be removed.
-     
-     - **Impact & Mitigations:**
-       
-         - **Mitigations:** Follow CEI (Checks, Effects, Interactions) pattern, use a cryptographically secure random number generator, update Solidity version and use SafeMath.
-
-More audits will be added as I further establish my expertise in smart contract security and contribute leading-edge practices to the industry.
+For a comprehensive collection of my smart contract audit reports, please visit my [portfolio](https://github.com/z0Ldev/z0L-security-portfolio).
 
 
 ## Let's Connect! 🌐
