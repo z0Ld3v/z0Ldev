@@ -25,7 +25,7 @@ Here’s a brief overview of some projects I've developed:
 Additional audits are being conducted as I further advance the field of smart contract security through rigorous analysis and strategic enhancements.
 
 
-1. **[Audit #1: PasswordStore]**
+1. ## Audit #1: PasswordStore
    - **Summary:** This audit highlighted significant vulnerabilities in the PasswordStore contract, including:
      - **[H-1]** Storing the password on-chain without encryption makes it visible to anyone.
      - **[H-2]** Lack of access control on the `setPassword` function allows any user to change the stored password.
@@ -36,11 +36,11 @@ Additional audits are being conducted as I further advance the field of smart co
      - **Mitigations:** Implement encryption, add access controls, and correct documentation.
 
 2. ## Audit #2: PuppyRaffle Audit Report
-   - **Summary:** This audit identified multiple vulnerabilities in the PuppyRaffle contract, including:
-     **High Severity**
-      -**[H-1]** Reentrancy attack in `PuppyRaffle::refund` allows entrant to drain raffle balance.
-      -**[H-2]** Weak randomness in `PuppyRaffle::selectWinner` allows users to influence or predict winners.
-      -**[H-3]** Integer overflow of `PuppyRaffle::totalFees` loses fees.
+   ### Summary This audit identified multiple vulnerabilities in the PuppyRaffle contract, including:
+     ## High Severity**
+      --[H-1] Reentrancy attack in `PuppyRaffle::refund` allows entrant to drain raffle balance.
+      --[H-2] Weak randomness in `PuppyRaffle::selectWinner` allows users to influence or predict winners.
+      --[H-3] Integer overflow of `PuppyRaffle::totalFees` loses fees.
      
      ### Medium Severity
       -**[M-1]** Potential denial of service (DoS) attack due to looping through players array to check for duplicates in PuppyRaffle::enterRaffle.
