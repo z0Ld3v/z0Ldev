@@ -36,32 +36,33 @@ Additional audits are being conducted as I further advance the field of smart co
      - **Mitigations:** Implement encryption, add access controls, and correct documentation.
 
 2. ## Audit #2: PuppyRaffle Audit Report
-   ### Summary This audit identified multiple vulnerabilities in the PuppyRaffle contract, including:
-     ## High Severity**
-      --[H-1] Reentrancy attack in `PuppyRaffle::refund` allows entrant to drain raffle balance.
-      --[H-2] Weak randomness in `PuppyRaffle::selectWinner` allows users to influence or predict winners.
-      --[H-3] Integer overflow of `PuppyRaffle::totalFees` loses fees.
+   - **Summary:** This audit identified multiple vulnerabilities in the PuppyRaffle contract, including:
      
-     ### Medium Severity
-      -**[M-1]** Potential denial of service (DoS) attack due to looping through players array to check for duplicates in PuppyRaffle::enterRaffle.
-      -**[M-2]** Unsafe cast of `PuppyRaffle::fee` loses fees.
-      -**[M-3]** Smart contract wallets raffle winners without a receive or a fallback function will block the start of a new contest.
+      - **High Severity**
+         - **[H-1]** Reentrancy attack in `PuppyRaffle::refund` allows entrant to drain raffle balance.
+         - **[H-2]** Weak randomness in `PuppyRaffle::selectWinner` allows users to influence or predict winners.
+         - **[H-3]** Integer overflow of `PuppyRaffle::totalFees` loses fees.
+     
+     - **Medium Severity**
+         - **[M-1]** Potential denial of service (DoS) attack due to looping through players array to check for duplicates in PuppyRaffle::enterRaffle.
+         - **[M-2]** Unsafe cast of `PuppyRaffle::fee` loses fees.
+         - **[M-3]** Smart contract wallets raffle winners without a receive or a fallback function will block the start of a new contest.
 
-     ### Low Severity
-      -**[L-1]** `PuppyRaffle:getActivePlayerIndex` returns 0 for non-existent players and for players at index 0, causing a player at index 0 to incorrectly think they have not entered the raffle.
+     - **Low Severity**
+         - **[L-1]** `PuppyRaffle:getActivePlayerIndex` returns 0 for non-existent players and for players at index 0, causing a player at index 0 to incorrectly think they have not entered the raffle.
 
-     ### Gas Optimizations
-      -**[G-1]** Unchanged state variables should be declared constant or immutable.
-      -**[G-2]** Storage variables in a loop should be cached.
+     - **Gas Optimizations**
+         - **[G-1]** Unchanged state variables should be declared constant or immutable.
+         - **[G-2]** Storage variables in a loop should be cached.
 
-     ### Informational / Non-Critical
-      -**[I-1]** Solidity pragma should be specific, not wide.
-      -**[I-2]** Using an outdated version of Solidity is not recommended.
-      -**[I-3]** Missing checks for `address(0)` when assigning values to address state variables.
-      -**[I-4]** `PuppyRaffle::selectWinner` does not follow CEI, which is not a good practice.
-      -**[I-5]** Use of "magic" numbers is not recommended.
-      -**[I-6]** State changes are missing events.
-      -**[I-7]** `PuppyRaffle::_isActivePlayer` is never used and should be removed.
+     - **Informational / Non-Critical**
+         - **[I-1]** Solidity pragma should be specific, not wide.
+         - **[I-2]** Using an outdated version of Solidity is not recommended.
+         - **[I-3]** Missing checks for `address(0)` when assigning values to address state variables.
+         - **[I-4]** `PuppyRaffle::selectWinner` does not follow CEI, which is not a good practice.
+         - **[I-5]** Use of "magic" numbers is not recommended.
+         - **[I-6]** State changes are missing events.
+         - **[I-7]** `PuppyRaffle::_isActivePlayer` is never used and should be removed.
      
      ### Impact & Mitigations:**
 Mitigations: Follow CEI (Checks, Effects, Interactions) pattern, use a cryptographically secure random number generator, update Solidity version and use SafeMath.
